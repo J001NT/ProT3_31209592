@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header view styles */
+h1 {
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 
+    -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 7px rgba(0, 0, 0, 0.4);
+    ;
+}
+
+header {
+    background-color: #EE783A;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #042c57;
+}
+
+.custom-navbar {
+    background-color: #174E87;
+    border-bottom: 3px solid #042c57;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+/*Estilos Principal*/
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  footer {
+    flex-shrink: 0;
+  }
+
+/* Estilos del footer */
+
+.logo-td {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%; 
+    border: 3px solid #69bd45;
+    border-radius: 10px; 
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #174E87;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-left: auto;
+}
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #042c57;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #EE783A;
+    border-top: 3px solid #042c57;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 13px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+/* Estilos del footer */
