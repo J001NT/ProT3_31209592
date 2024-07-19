@@ -21,3 +21,6 @@ $routes->get('/login', 'Login_controller');
 $routes->post('/enviarlogin', 'Login_controller::auth');
 $routes->get('/panel', 'Panel_controller::index',['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
+
+/*Panel Admin (CRUD)*/
+$routes->get('administrar', 'AdministrarController');

@@ -1,3 +1,10 @@
+<!--Mensaje Registrdo con exito-->
+<?php if(session()->getFlashdata('success')):?>
+            <div class="alert alert-warning">
+                <?= session()->getFlashdata('success')?>
+            </div>
+    <?php endif;?>
+
 <!-- Mensaje de Error -->
 <?php if(session()->getFlashdata('msg')):?>
             <div class="alert alert-warning">
