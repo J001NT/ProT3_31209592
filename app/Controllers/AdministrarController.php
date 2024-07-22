@@ -28,7 +28,7 @@ class AdministrarController extends Controller
             'nombre' => 'required',
             'apellido' => 'required' ,
             'usuario' => 'required' , 
-            'email' => 'required|valid_email|is_unique[usuarios.email]']);
+            'email' => 'required']);
 
         if ($_POST && $validacion){
 
@@ -74,12 +74,12 @@ class AdministrarController extends Controller
         $model = new usuario_Model();
 
 
-        $dato = $model->getUsuario($id_usuario);
+        $data = $model->getUsuario($id_usuario);
 
         $dato['titulo']='Editar';
         echo view('front/head_view', $dato);
         echo view('front/navbar_view');
-        echo view('back/usuario/edit', compact('dato'));
+        echo view('back/usuario/edit', compact('data'));
         echo view('front/footer_view');
 
     }
@@ -90,7 +90,7 @@ class AdministrarController extends Controller
             'nombre' => 'required',
             'apellido' => 'required' ,
             'usuario' => 'required' , 
-            'email' => 'required']);
+            ]);
 
         if ($validacion){
 
@@ -102,7 +102,6 @@ class AdministrarController extends Controller
             'nombre' => $_POST['nombre'],
             'apellido' => $_POST['apellido'],
             'usuario' => $_POST['usuario'],
-            'email' => $_POST['email'],
         ];
 
         $id_usuario=$_POST['id_usuario'];
