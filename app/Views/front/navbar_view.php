@@ -27,6 +27,9 @@
           <a class="nav-link link-light" href="login">Login</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link link-light" href="administrar">Administrar</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link link-light" href="<?php echo base_url('/logout');?>" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
         </li>
       </ul>

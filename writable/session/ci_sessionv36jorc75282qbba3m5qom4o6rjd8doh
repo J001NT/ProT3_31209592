@@ -1,0 +1,12 @@
+__ci_last_regenerate|i:1721596940;_ci_previous_url|s:36:"https://localhost/ProT3_31209592/add";msj|s:372:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>The nombre field is required.</li>
+					<li>The apellido field is required.</li>
+					<li>The usuario field is required.</li>
+					<li>The email field is required.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:1:{s:3:"msj";s:3:"old";}

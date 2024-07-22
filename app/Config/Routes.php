@@ -24,3 +24,7 @@ $routes->get('/logout', 'Login_controller::logout');
 
 /*Panel Admin (CRUD)*/
 $routes->get('administrar', 'AdministrarController');
+$routes->get('add', 'Administrarcontroller::add');
+$routes->post('add', 'Administrarcontroller::store');
+$routes->get('edit/(:num)', 'Administrarcontroller::edit/$1');
+$routes->get('delete(:num)', 'Administrarcontroller::delete/$1');

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-07-2024 a las 19:55:53
+-- Tiempo de generación: 22-07-2024 a las 02:22:40
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.1.25
 
@@ -62,9 +62,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `usuario`, `email`, `pass`, `perfil_id`, `baja`) VALUES
-(1, 'Lobito', 'Feroz', 'LobitoFeroz18', 'lobitoferoz@mentira.com', '$2y$10$yNSzr4MZPo0pt2adUd9ziOFLHhJPcntmInyED4X3kVZqPusqU48cm', 2, 'NO'),
 (2, 'Gonzalo', 'Rodriguez', 'Gonza22', 'gonzarodriguez@admin.com', '$2y$10$gl70TVlmknYfnLpbH8qLwuqw.t4k2dDDRcO5mTsrWpFshn2xMcawm', 1, 'NO'),
-(3, 'matias', 'rodriguez', 'matirodriguez', 'matiasrodriguez@mentira.com', '$2y$10$iubSA3BIxtxOglZ.1J1q1.kD9zJPUNUf/VnCtAoOBHjpzGgez8okW', 2, 'NO');
+(4, 'melisa', 'lezcano', 'meli22', 'melisalezcano@mentira.com', '$2y$10$TrUiLZ25SFe7uL/CuuUOee4yp34JseN1TBxqzg.e4cs.gkSMxXOPu', 2, 'NO');
 
 --
 -- Índices para tablas volcadas
@@ -96,7 +95,7 @@ ALTER TABLE `perfiles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
